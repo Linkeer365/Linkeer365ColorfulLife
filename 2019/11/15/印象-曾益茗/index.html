@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="function doDecrypt (pwd, onError) { 	console.log(&apos;in doDecrypt&apos;); 	const txt = document.getElementById(&apos;enc_content&apos;).innerHTML; 	let plantext; 	try { 		const bytes = CryptoJS.AES.decrypt(txt, pwd);">
+<meta name="description" content="虽然很久没有见面，但是我的脑海中的确留下了对你的一点依稀的印象。 之所以依稀，一来是因为我的记忆的组织方式一直以来都比较零散，要完全串起来要花大概4-5个小时的整理（我就是这么整理我对爷爷的记忆的）；二来是因为我后来才发现，我的思维与记忆在我爷爷去世前3至4个月内就开始无限地疏松与散佚，原来的我几乎可以脑内复现我阅读过的全部文字，包括各种页边页脚的信息，也包括我阅读的时刻的种种状态，例如我在小学二">
 <meta name="keywords" content="随感">
 <meta property="og:type" content="article">
-<meta property="og:title" content="印象-曾益茗">
+<meta property="og:title" content="印象-zym">
 <meta property="og:url" content="http://yoursite.com/Linkeer365ColorfulLife/2019/11/15/印象-曾益茗/index.html">
 <meta property="og:site_name" content="四季映姬的小天地">
-<meta property="og:description" content="function doDecrypt (pwd, onError) { 	console.log(&apos;in doDecrypt&apos;); 	const txt = document.getElementById(&apos;enc_content&apos;).innerHTML; 	let plantext; 	try { 		const bytes = CryptoJS.AES.decrypt(txt, pwd);">
+<meta property="og:description" content="虽然很久没有见面，但是我的脑海中的确留下了对你的一点依稀的印象。 之所以依稀，一来是因为我的记忆的组织方式一直以来都比较零散，要完全串起来要花大概4-5个小时的整理（我就是这么整理我对爷爷的记忆的）；二来是因为我后来才发现，我的思维与记忆在我爷爷去世前3至4个月内就开始无限地疏松与散佚，原来的我几乎可以脑内复现我阅读过的全部文字，包括各种页边页脚的信息，也包括我阅读的时刻的种种状态，例如我在小学二">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-02-27T10:51:12.406Z">
+<meta property="og:updated_time" content="2020-02-29T02:27:00.104Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="印象-曾益茗">
-<meta name="twitter:description" content="function doDecrypt (pwd, onError) { 	console.log(&apos;in doDecrypt&apos;); 	const txt = document.getElementById(&apos;enc_content&apos;).innerHTML; 	let plantext; 	try { 		const bytes = CryptoJS.AES.decrypt(txt, pwd);">
+<meta name="twitter:title" content="印象-zym">
+<meta name="twitter:description" content="虽然很久没有见面，但是我的脑海中的确留下了对你的一点依稀的印象。 之所以依稀，一来是因为我的记忆的组织方式一直以来都比较零散，要完全串起来要花大概4-5个小时的整理（我就是这么整理我对爷爷的记忆的）；二来是因为我后来才发现，我的思维与记忆在我爷爷去世前3至4个月内就开始无限地疏松与散佚，原来的我几乎可以脑内复现我阅读过的全部文字，包括各种页边页脚的信息，也包括我阅读的时刻的种种状态，例如我在小学二">
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>印象-曾益茗 | 四季映姬的小天地</title>
+  <title>印象-zym | 四季映姬的小天地</title>
   
 
 
@@ -239,7 +239,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">印象-曾益茗</h1>
+          <h1 class="post-title" itemprop="name headline">印象-zym</h1>
         
 
         <div class="post-meta">
@@ -267,8 +267,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-02-27T18:51:12+08:00">
-                2020-02-27 18:51:12
+              <time title="更新于" itemprop="dateModified" datetime="2020-02-29T10:27:00+08:00">
+                2020-02-29 10:27:00
               </time>
             
           </span>
@@ -332,46 +332,24 @@
       
 
       
-        <script src="/Linkeer365ColorfulLife/js/crypto-js.js"></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">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</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div>
+        <p>虽然很久没有见面，但是我的脑海中的确留下了对你的一点依稀的印象。</p>
+<p>之所以依稀，一来是因为我的记忆的组织方式一直以来都比较零散，要完全串起来要花大概4-5个小时的整理（我就是这么整理我对爷爷的记忆的）；二来是因为我后来才发现，我的思维与记忆在我爷爷去世前3至4个月内就开始无限地疏松与散佚，原来的我几乎可以脑内复现我阅读过的全部文字，包括各种页边页脚的信息，也包括我阅读的时刻的种种状态，例如我在小学二年级第一次读到快乐王子的时候，我被一把（绿色的）小刀割伤了手指，血滴在页码的472的”7”处，并且我当时觉得王子和燕子都很搞笑，根本体会不到感人的地方；这种精密性在我爷爷去世前3-4个月内突然中止，我再也不能准确地复刻任何场景了。就算是神经质的每天记录日记，也根本达不到像曾经一样的强度了（但事实上这也是有好处的，我突然变得敏锐而体贴，开始关心人们永恒地周旋其间的苦难了，这应该是一件好事）；</p>
+<p>这解释了为什么我的记忆会“依稀”，绝不是因为你的存在与印象本身对我不重要，而是我现在的状态，再重要的场景与义理，只要缺少了时常的反复推演，都将一忘皆空，仿佛他们不曾存在过一样。</p>
+<h1 id="印象1-“你的字挺好看的”"><a href="#印象1-“你的字挺好看的”" class="headerlink" title="印象1-“你的字挺好看的”"></a>印象1-“你的字挺好看的”</h1><p>我和你应该是数竞上认识的，但是我当时第一个开始关注的人是wwh，因为他是我初中的校友，数学很厉害，人也非常踏实坦诚，我当时非常非常崇拜他（实际上现在也是，我是一个相当慕强的人）；第二个是zxt，因为他像一只机灵的小野猫一样，对自己钟爱的东西（好像是刚体物理，具体的忘记了，我对物理是一窍不通的）很愿意用心去钻研；第三个是wyx，因为她身上的世俗性和对应的福泽匹配得最好，机敏足够且没有锋芒，并且她的母亲和我的母亲是同事，相互之间也处得很熟，家境也比较符合（原谅我的无礼与机心，我的确认真考虑过和她结婚的种种可能，并且是不含有男女之间爱意的这类冷酷的推算与设想），第四个是llr，因为他是一个心肠好到令人心疼的孩子，从他初中帮一名弱智的孩子xtr出头一事我就能看出来（xtr是我小学少有的朋友之一，我一直跟他是好朋友，直到初中他的个性突然劣化，仔细询问我才知道许多事情的原委，随后我的诅咒生效，但是xtr和我再也成不了朋友了），我非常想帮助他，因为他这样的性格感觉日后背锅会很频繁，这么细细盘查下来，我的确当时是把你忽略了。</p>
+<p>我记得当时我在讲台桌下的柜子写字，写的是一道再简单不过的数列不动点推导式，当时我还在思考如果出现同解的情况，到底要怎么处理（但我随即自作聪明的把同解的情况带入了异解的情况，当时的我实在是太自以为是和太自作聪明了，随随便便就想着套用公式，而不细想公式得来的办法与原委），然后你对我说（准确地描述应该是从面向赵先韬到逐渐侧步转身面对我的动作），然后说“你的字挺好看的”。</p>
+<p>我当时头脑里的想法是，“被表扬了，要说谢谢。”“这种客套的话我怎么能相信呢？”但我还是突然之间开心起来，这份开心超出了我的预想，我在那一瞬间意识到了我可悲的、不可救药的肤浅与自以为是的情绪，我当时十分恐惧，于是用袖子擦掉了所有的板书，从手背到手肘都是一片毒液一样的浅绿色。</p>
+<p>当天晚上我仔细回想，觉得应该是自己多虑了，应该就是一句再普通不过的赞美而已，但是这其中的欢喜与恐惧的切换实在太过震悚，以至于我还是将它记录了下来。</p>
+<p>这件事让我意识到了我自己的肤浅是根植于骨髓的，倘若这样简单的一句称赞就会迷了心窍，那终归是非常浅薄的行为，但是我竟一瞬间没法避免，且更加遗憾的事情是，我处于“两头都接不上”的处境中，既没有完全被称赞所迷，也没有一瞬间说服自己保持冷静与克制，我至此意识到自己规约自身的局限性，于是决定采用自己客观记录一切，来让他人进行评判与规训的做法。</p>
+<h1 id="印象2-“然后…”"><a href="#印象2-“然后…”" class="headerlink" title="印象2-“然后…”"></a>印象2-“然后…”</h1><p>我进入k班之后，就极快地意识到了气氛的不对劲，这种不对劲的根源，一来自nyy老师显而易见的市侩习气，二来自于（不知为何的）猜忌与鄙夷的潜滋暗长，针对ly同学的隔绝挤兑行动慢慢展开，我（准确来说是连同cxy）对这种“透明风暴”性质的举措根本无能为力，此后我做出了一个大胆的决定，逃离k班；然后在倒数第二个星期，我听了你的演讲报告。</p>
+<p>当时班里正在进行什么活动（我记得是”猜单词”？忘了，我只记得中间，yf想的plug单词被高开元连续四个地猜中了，也可能存在一些混淆，不确定了），当时是你最先发言的，你的开场白是”然后…”</p>
+<p>我当时头脑里的想法是，“就是这样的开场白吗？太平淡了吧”“zmy你难道是在害怕什么吗？难道是更好的陈词办法说不出来吗？”但后来我猜想，你可能也是被班内的“透明风暴”所震慑所威胁，因而想好的开场白也一时半会说不出口了，虽然你的确面带着微笑，但我却猜到了你的恐惧。这一点没有得到你的证实，但我也一直忘了询问，于是就一路搁置到了我退出k班来到s班，然后就搁置到现在，事实上现在的我，也一点也没有想要得知真相的想法了，太久远了，这些事情说到底也没有太大意义的。</p>
+<p>由此我坚信了内心的想法，环境对一个人的塑造是很恐怖的，在一个比较麻烦的环境里，再杰出的人也会恐惧，只不过显现出来的形式有所不同，但在这种恐惧中，到底有多少人真正被环境深切地影响以至驯服，变成了“透明风暴”的一员呢？想要不成为“透明风暴”的一员，真的只有“呐喊”“逃亡”这条唯一的路子吗？ 而我现在的行动，又到底算什么？ 到底是撤离呢，还是溃退呢？ 我一直想要当一个直面风暴的人，为什么就这么困难呢？</p>
+<p>这实际上也为我日后返回k班提供了一个引子，但事实上我返回k班的原因，却说到底没有那么崇高，我很清楚老师和同学不会欢迎我，但是我一来被父母催得有点心累，他们算是地球上少有的理解关心爱护孩子的父母了，但是他们还是会有这样那样的刻板思维在里面（包括高考前3个月我想要测试几款治疗手汗的药品都遭到拒绝，此后高考考场上的手汗药剂完全失效，身处考场的我的确感到恐慌，但出乎意料地明白自己的最终结果一定会非常良好，我也不知道哪来的自信）；二来则是我对wyj同学萌生了莫名其妙的情愫（原谅我的无礼，她当时最初给我的感觉像是棉花糖一样，甜美却毫无营养），我根本不知道怎么抗拒这种想要和她聊天的冲动，并且这种冲动让我感到极其不适，这一点令我感到无比的恐慌，甚至使我中途改变了计划，这可能就是孽缘吧，要不然我本可以跟一群损友们聊天打屁度过另一种高中生活的。</p>
+<p>（但实际上好处也不是没有，至少我认识了直到现在仍在联系的cmj同学，他是一个可爱的男孩子，拥有着惊人的数学直觉；还有就是在ly摔伤了腿的那些日子送了他一盒药剂，当然主要帮扶的功臣还是hcx和zrx，这点是我不能争功的，（hcx也是很支持ly的，还记得一次跳绳比赛时，ly在绳子断掉的一刹那间冲上来将绳子继续甩起，hcx在一旁一遍叹气一边说，真是“路中大夫”一样的人啊，我也不知道为什么大家默默排挤ly，这令我本人非常恼火，直到现在也根本无法理解，我觉得这一次是我对，而大家才是错的））</p>
+<h1 id="印象3-“插件与介质”的思维启发"><a href="#印象3-“插件与介质”的思维启发" class="headerlink" title="印象3-“插件与介质”的思维启发"></a>印象3-“插件与介质”的思维启发</h1><p>刚上大学时，由于对计算机几乎没有任何基础，我向许多学长取经，在后面跌跌撞撞完成了trival至极的几个项目以后，我变得越发迷茫起来，直至现在，我也仍处于迷茫状态，不知前路在何方，也不知道互联网寒冬几时到来，生物信息技术到底有没有前景。最重要的是，我究竟要给世界留下一点什么东西呢？占用了地球如此多的空气分子，最后除了一堆腐肉与白骨（现在火葬了应该会干净一点）和从生到死产生的一堆代谢废物以外啥也没有，这样的人生与邪典有什么区别呢？退一步说，从世俗功利的角度分析，就如同体重要和三次方的身高成正比一样地，社会对一个人达到一定智力水平所花时间的要求，是非常苛刻的（所以一个80岁的高考状元几乎一钱不值）；同样，社会对一个人达成一定社会地位与成就所花时间的要求则更加苛刻（一事无成而身无分文的人终究是要被唾弃的，就像姜子牙一样，就像江淹一样，很可能姜子牙只不过误打误撞得胜一场，于是以前一切的愤世之举都被洗脱；江淹可能是想要尝试一种新的生活方式，或者去探索另外的理想，但终究没有实现，人们就以为他的才尽）；而我如今起跑就算极晚，而我又毫无数理天赋，况复身体欠佳频频住院，GPA也是跌到谷底，纵使就业也达不到996的基本条件，那么目前的状态不就是等死而已吗？</p>
+<p>但此时的我看了你的空间，发现了你的生活实际是非常丰富多彩的（谢谢你推荐给我的&lt;刀语&gt;，还有天文学的一些科普（我甚至在github issues上结交了你的一个学长，叫Wu Liang））我原本以为像你们这类数理奇才，都是假以经年累月之工，皓首穷经一般的钻研与打磨，最终才完成自身的突破的，但你的空间启发了我很多，我总以为一个人有着很多的爱好会束缚自己，会成为自己的拖累与牵绊，但后来我发现其实并非如此，人完全可以像加载插件一样的加载各式各样的兴趣，只要你用心钻研，没有什么东西最后是无趣而枯燥的，这也进一步启发了我的思考，类似于插件的意象，人其实也被各式各样的介质，以一种抽象的方式笼罩着，这种介质很可能是你之前听过领会的几句话，很可能是以前你的某些特殊的经历，但我觉得更加具体意义上的情况是，这些介质其实是你身边志趣相投的亲友，趁手而扎实的工具链与知识体系，还有周密而热忱的思维习惯与探索精神，人很可能就是被这些“插件”与“介质”所规划出来的一个小小的可行域，正因如此，我们才需要守护一些习惯与日常，才需要时常检查一下自己是不是忘记思考很久了这样。</p>
+<p>以上种种，或许有“下笔千言，离题万里”之感，但今天我确实亦是有感而发，本着对自己近几年来的生活做一个聊胜于无的梳理的思路，选取了一些我认为很重要的细节加以叙述。综上，我非常感谢你给我带来的种种显式或潜在的启发与告诫，希望今后的你能够向着你所追求的东西慢慢走去，不论你追求的是不是幸福，也不管你今后会不会因此而懊悔，都遵从着自己的本心、毫不投机地走下去，就像<code>&lt;Kaiba&gt;</code>的ed里所言”Somewhere sincere light shines”，实际上我常常不严谨地这么想，在被提不可证伪的条件下，要是到处都不见光，那么只能说明我们大家自己就是”sincere light”自身了。</p>
+
       
     </div>
     
@@ -411,8 +389,8 @@ doDecrypt(passwd, onError);
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/Linkeer365ColorfulLife/2019/11/17/印象-刘心怡/" rel="prev" title="印象-刘心怡">
-                印象-刘心怡 <i class="fa fa-chevron-right"></i>
+              <a href="/Linkeer365ColorfulLife/2019/11/17/印象-刘心怡/" rel="prev" title="印象-lxy">
+                印象-lxy <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -465,8 +443,17 @@ doDecrypt(passwd, onError);
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -481,7 +468,7 @@ doDecrypt(passwd, onError);
               
                 <a href="/Linkeer365ColorfulLife/archives/">
               
-                  <span class="site-state-item-count">106</span>
+                  <span class="site-state-item-count">105</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -517,6 +504,22 @@ doDecrypt(passwd, onError);
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#印象1-“你的字挺好看的”"><span class="nav-number">1.</span> <span class="nav-text">印象1-“你的字挺好看的”</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#印象2-“然后…”"><span class="nav-number">2.</span> <span class="nav-text">印象2-“然后…”</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#印象3-“插件与介质”的思维启发"><span class="nav-number">3.</span> <span class="nav-text">印象3-“插件与介质”的思维启发</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
